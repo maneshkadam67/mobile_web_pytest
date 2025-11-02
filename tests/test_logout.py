@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 
 
 class TestLogout:
-    @pytest.mark.order(1)
     def test_logout(self):
         self.driver.get("https://thinking-tester-contact-list.herokuapp.com/")
         time.sleep(1)

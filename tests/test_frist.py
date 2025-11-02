@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 import logging
 
 class TestFirst:
-    @pytest.mark.order(2)
     def test_login(self,caplog):
         self.driver.get("https://thinking-tester-contact-list.herokuapp.com/")
         time.sleep(1)
