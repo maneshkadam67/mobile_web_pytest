@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.service import Service
 def setup(request):
     options = Options()
     options.add_argument("--start-maximized")
+    options.add_argument("--headless=new")
     service = Service()
     driver = webdriver.Chrome(service=service, options=options)
     request.cls.driver = driver
